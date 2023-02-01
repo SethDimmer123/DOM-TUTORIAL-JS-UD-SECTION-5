@@ -17,7 +17,11 @@ btn.style.color = 'white';
 // i stored the getElementById in a variable so i can have access to it
 // as well as putting properties on it to change it 
 
-// if there is multiple bunttons and i want them all them same styling this is great way to do it.
+// if there is multiple bunttons and i want them all them same styling 
+// this is great way to do it.
+
+
+// I DO NOT ALWAYS HAVE TO USE A VARIABLE.
 
 
 
