@@ -9,6 +9,7 @@ const result = document.querySelector('#result');
 
 
 
+
 // i want to remove the second heading
 // in order to use removeCHild i need to run it on a parent
 
@@ -17,6 +18,14 @@ const result = document.querySelector('#result');
 const heading = result.querySelector('h1');
 result.removeChild(heading);
 console.log(heading);
+
+
+// in this case i just removed the heading from the DOM NOT THE html
+
+
+// example of a node is result (line 17)
+
+
 
 
 
