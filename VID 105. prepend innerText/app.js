@@ -8,3 +8,6 @@ const heading = document.createElement('h2');
 heading.innerText = `i am a dynamic heading`;
 document.body.prepend(heading); //prepend instead of appened puts my heading in front of the index.html heading 1 element
 
+
+
+
