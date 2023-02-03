@@ -32,12 +32,33 @@ document.body.appendChild(ul);
 // text within the div
 // do this
 
-// div.textContent = 'hello world'
+div.textContent = 'hello world'
 
 // on the browser page i have changed the html text from 
 // 'i have some text content' to 'hello world'.
 
 
+div.innerHTML = 'hello people';
+
+
+// IN THIS CASE THERE IS NOOO!! DIFFERENCE
+
+
+// HOWEVER IF I WANTED TO ADD A PROPER HTML STRUCTURE THEN textContent
+// will not work
+
+div.innerHTML = `<li class="item">${randomVar}</li>
+<li>list item</li><li>list item</li>`
+// in this case i am just inserting html structure
+
+// BUT IF I HAVE textContent
+
+// I AM NOT INSERTING PROPER html content it will be regular text of 
+// what i have in the template strings
+
+
+div.textContent = `<li class="item">${randomVar}</li>
+<li>list item</li><li>list item</li>`
 
 
 
