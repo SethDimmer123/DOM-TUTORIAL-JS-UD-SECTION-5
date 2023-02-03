@@ -61,6 +61,10 @@ div.textContent = `<li class="item">${randomVar}</li>
 <li>list item</li><li>list item</li>`
 
 
+// if i am inserting PROPER HTML STRUCTURE like on line 50 i need to use .innerHTML
+// and NOT .textContent.
+
+
 
 
 
