@@ -7,7 +7,7 @@
 const btn = document.querySelector('.btn'); // i am LISTENING FOR THE CLICK EVENTS ON A BUTTON.
 const heading = document.querySelector('h2');
 
-btn.addEventListener('click', function() {
+btn.addEventListener('click', function() { //animous callback function
   heading.classList.add('red');
 });
 
