@@ -7,17 +7,20 @@
 const heading = document.querySelector('h1');
 const btn = document.querySelector('.btn');
 
-btn.addEventListener('click', function() {
+btn.addEventListener('click', function() { 
+//when mouse is clicked whatever the string in the console log shows up
   console.log('you clicked me');
 });
 btn.addEventListener('mousedown', function() {
+    //whenever i click the mouse but not when i stop pressing the string in the log shows up in the console
   console.log('down');
 });
 btn.addEventListener('mouseup', function() {
   console.log('up');
 });
 
-heading.addEventListener('mouseenter', function() {// when the mouse is hovered over heading background-color changes to blue
+heading.addEventListener('mouseenter', function() {
+// when the mouse is hovered over heading background-color changes to blue
   heading.classList.add('blue');
 });
 heading.addEventListener('mouseleave', function() {
