@@ -36,3 +36,5 @@ window.addEventListener('click', showBubbling, { capture: true });
 
 // just remember the principle of this is to allow me to select dynamic elements
 
+
+
