@@ -8,10 +8,10 @@ const list = document.querySelector('.list-items');
 
 function showBubbling(e) {
   console.log('current target', e.currentTarget);
-//   console.log('target', e.target);
-//   if (e.target.classList.contains('link')) {
-//     console.log('you clicked on the link');
-//   }
+  console.log('target', e.target);
+  if (e.target.classList.contains('link')) {
+    console.log('you clicked on the link');
+  }
 } // if the target im clicking on actually contains the link then console log i clicked on the link.
 function stopPropogation(e) {
   e.stopPropagation(); // this stops me from listening for the events for example container
@@ -24,7 +24,7 @@ window.addEventListener('click', showBubbling, { capture: true });
 
 
 // event bubbling which is the default behavior and the elements will BUBBLE UP
-// parent, parent of the parent and all the way up to a window where i can register those events]
+// parent, parent of the parent and all the way up to a window where i can register those events
 
 // or i can use
 //event capturing when clicked starts at the window then works its way up the chain starts 
