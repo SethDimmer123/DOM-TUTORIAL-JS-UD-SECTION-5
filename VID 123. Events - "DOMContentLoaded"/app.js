@@ -14,3 +14,8 @@ window.addEventListener('DOMContentLoaded', function () {
     console.log(heading);
     heading.style.color = 'red';
   });
+
+
+  // when the DOMContentLoaded has been loaded then the code inside of the function
+  // is executed.
+
