@@ -16,16 +16,34 @@ console.log(values[2]);
 
 
 
+// down below i am covering how to check if the value is ALREADY IN localStorage
+// IF IT IS IN localStorage then i will assign it 
+
+// IF THE VALUE IS NOT IN localStorage then i will have an EMPTY ARRAY.
+
+// THIS IS SOMETHING I WILL DO IN THE PROJECTS.
+
+let fruits; //first i am creating an empty array
+// an empty array is just a variable with the name of fruits
+
+if (localStorage.getItem('fruits')) {// if tbis doesnt exist then the else statement runs
+  fruits = JSON.parse(localStorage.getItem('fruits'));
+} else {
+  fruits = []; // if the fruits key in the application 
+//   tab DOES NOT exist then i will get back an empty array in the console.
+}
+console.log(fruits);
+fruits.push('apple');
+// fruits.push('orange'); // each time i refresh i add another fruit to the array.
+localStorage.setItem('fruits', JSON.stringify(fruits)); 
+
+//LINE 38 IS HOW I PUSH MY fruits array to my localStorage
 
 
-// let fruits;
 
-// if (localStorage.getItem('fruits')) {
-//   fruits = JSON.parse(localStorage.getItem('fruits'));
-// } else {
-//   fruits = [];
-// }
-// console.log(fruits);
-// // fruits.push('apple');
-// fruits.push('orange');
-// localStorage.setItem('fruits', JSON.stringify(fruits));
+// general principle of the stuff between lines 19 and 40 is 
+
+// in my next projects i am going to check first if the item(fruits) is ALREADY in the local storage(loom at line 29)
+//  if it is then i am going to grab the value (line 30)
+// if the value is NOT in localStorage then we will set it equal to an empty array.
+
